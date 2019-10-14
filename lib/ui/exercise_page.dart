@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:trainer/viewmodel/exercise_viewmodel.dart';
 
 class ExercisePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final model = ExerciseViewModel();
+    final model = Provider.of<ExerciseViewModel>(context);
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by

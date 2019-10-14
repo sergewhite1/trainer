@@ -1,14 +1,16 @@
+import 'package:flutter/foundation.dart';
 import 'package:trainer/model/exercise.dart';
 
-class ExerciseViewModel {
-  static int _exerciseIndex = 0;
+class ExerciseViewModel with ChangeNotifier {
+  static int _exerciseIndex = 1;
 
   Exercise get currentExercise {
-    ++_exerciseIndex;
     return Exercise(title: 'Exercise $_exerciseIndex');
   }
 
   void nextExercise() {
-    print('ExerciseViewModel::nextExercise()');
+    print('ExerciseViewModel::nextExercise() _exerciseIndex: $_exerciseIndex');
+    ++_exerciseIndex;
+    notifyListeners();
   }
 }
