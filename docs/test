@@ -1,0 +1,6 @@
+For run all unit tests:
+flutter test
+
+
+For run concrete unit test:
+flutter test test/random_test.dart
