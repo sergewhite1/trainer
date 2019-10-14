@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:trainer/viewmodel/exercise_viewmodel.dart';
 
 class ExercisePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final model = ExerciseViewModel();
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -15,7 +17,7 @@ class ExercisePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Text(
-                'hello',
+                model.currentExercise.title,
               ),
               RaisedButton(
                 color: Colors.blue,
@@ -24,6 +26,7 @@ class ExercisePage extends StatelessWidget {
                 ),
                 onPressed: () {
                   print('Next button pressed.');
+                  model.nextExercise();
                 },
               ),
             ],
