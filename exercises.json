@@ -1,0 +1,14 @@
+{
+  "exercises": [
+    {
+      "title": "Push Up",
+      "image": "assets/push_up.jpg",
+      "work": "3x20"
+    },
+    {
+      "title": "Exercise 2",
+      "image": "",
+      "work": "1x20 3x15"
+    }
+  ]
+}

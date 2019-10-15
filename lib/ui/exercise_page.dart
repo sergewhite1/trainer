@@ -32,6 +32,9 @@ class ExercisePage extends StatelessWidget {
                       'assets/push_up.jpg',
                     ),
                     Text(
+                      '3x20',
+                    ),
+                    Text(
                       veryLongString,
                     ),
                   ],
