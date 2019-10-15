@@ -6,9 +6,14 @@
       "work": "3x20"
     },
     {
-      "title": "Exercise 2",
-      "image": "",
+      "title": "Lifting dumbbells for biceps while standing",
+      "image": "assets/lifting_dumbbells_for_biceps_while_standing.jpg",
       "work": "1x20 3x15"
+    },
+    {
+      "title": "Fermer's walk",
+      "image": "assets/fermers_walk.jpg",
+      "work": "3x 1min"
     }
   ]
 }

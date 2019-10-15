@@ -1,0 +1,5 @@
+If there are problems with assets in runtime, use
+flutter clean
+
+then
+flutter run

@@ -6,6 +6,7 @@ class ExercisePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final model = Provider.of<ExerciseViewModel>(context);
+    print("Image: ${model.currentExercise.image}");
 
     //var sb = StringBuffer('This is very long string');
     //for (int i = 0; i < 200; ++i) {
