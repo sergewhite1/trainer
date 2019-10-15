@@ -1,11 +1,10 @@
-import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trainer/math/uniform_random_int_generator.dart';
 
 void main() {
-  group('Random Test', () {
+  group('Uniform Random Int Generator Test', () {
     test('Test Case 1', () {
       //  Calc histogram for random distribution in standard dart.
-      var random = Random();
       const int MAX_VALUE = 9;
       const int N = 1000;
       var hist = List<int>();
@@ -13,10 +12,11 @@ void main() {
         hist.add(0);
       }
 
+      var randomGenerator = UniformRandomIntGenerator(MAX_VALUE);
       int x;
 
       for (int i = 0; i < N; ++i) {
-        x = random.nextInt(MAX_VALUE + 1);
+        x = randomGenerator.generate();
         hist[x]++;
       }
 
