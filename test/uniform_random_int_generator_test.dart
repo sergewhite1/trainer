@@ -20,11 +20,12 @@ void main() {
         hist[x]++;
       }
 
-      String histDataString = '';
+      var histDataSB = StringBuffer();
       for (int i = 0; i <= MAX_VALUE; ++i) {
-        histDataString +=
-            'E[' + i.toString() + ']=' + hist[i].toString() + '; ';
+        histDataSB
+            .write('E[' + i.toString() + ']=' + hist[i].toString() + '; ');
       }
+      var histDataString = histDataSB.toString();
       print('histData: $histDataString');
       expect(1, 1);
     });
