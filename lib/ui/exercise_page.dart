@@ -6,6 +6,11 @@ class ExercisePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final model = Provider.of<ExerciseViewModel>(context);
+    var sb = StringBuffer('This is very long string');
+    for (int i = 0; i < 200; ++i) {
+      sb.write('Record $i');
+    }
+    var veryLongString = sb.toString();
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -17,8 +22,17 @@ class ExercisePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Text(
-                model.currentExercise.title,
+              Expanded(
+                child: ListView(
+                  children: <Widget>[
+                    Text(
+                      model.currentExercise.title,
+                    ),
+                    Text(
+                      veryLongString,
+                    ),
+                  ],
+                ),
               ),
               RaisedButton(
                 color: Colors.blue,
