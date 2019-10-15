@@ -28,6 +28,9 @@ class ExercisePage extends StatelessWidget {
                     Text(
                       model.currentExercise.title,
                     ),
+                    Image.asset(
+                      'assets/push_up.jpg',
+                    ),
                     Text(
                       veryLongString,
                     ),
