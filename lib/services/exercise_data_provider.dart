@@ -11,19 +11,23 @@ class ExerciseDataProvider {
   static Future load() async {
     final jsonString = await rootBundle.loadString('exercises.json');
     Map<String, dynamic> x = jsonDecode(jsonString);
-    print('x: $x');
-    print(x.runtimeType);
+
+    //print('x: $x');
+    //print(x.runtimeType);
+
     List<dynamic> exerciseMap = x["exercises"];
     _data.clear();
     for (final elem in exerciseMap) {
       _data.add(Exercise.fromMap(elem));
     }
 
-    var dataSB = StringBuffer();
-    for (final elem in _data) {
-      dataSB.writeln('${elem.title} ${elem.image} ${elem.work}');
-    }
-    print(dataSB.toString());
+    print('ExerciseDataProvider. Load exercises: ${_data.length}');
+
+    //var dataSB = StringBuffer();
+    //for (final elem in _data) {
+    //  dataSB.writeln('${elem.title} ${elem.image} ${elem.work}');
+    //}
+    //print(dataSB.toString());
   }
 
   static List<Exercise> data() => _data;
