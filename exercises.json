@@ -11,9 +11,19 @@
       "work": "1x20 3x15"
     },
     {
+      "title": "Lifting dumbbells for biceps and push ups",
+      "image": "",
+      "work": "1x20 3x15"
+    },
+    {
       "title": "Fermer's walk",
       "image": "assets/fermers_walk.jpg",
       "work": "3x 1min"
+    },
+    {
+      "title": "Hammer biceps curls",
+      "image": "assets/hammer_biceps_curls.jpg",
+      "work": "1x20 3x15"
     }
   ]
 }
