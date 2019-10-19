@@ -15,10 +15,16 @@ void main() {
       var randomGenerator = UniformRandomIntGenerator(MAX_VALUE);
       int x;
 
+      var valuesSB = StringBuffer();
+
       for (int i = 0; i < N; ++i) {
         x = randomGenerator.generate();
+        valuesSB.write('$x ');
         hist[x]++;
       }
+
+      print('MAX_VALUE= $MAX_VALUE N=$N');
+      print('values: ${valuesSB.toString()}');
 
       var histDataSB = StringBuffer();
       for (int i = 0; i <= MAX_VALUE; ++i) {
@@ -27,7 +33,9 @@ void main() {
       }
       var histDataString = histDataSB.toString();
       print('histData: $histDataString');
-      expect(1, 1);
+
+      int sum = hist.fold(0, (p, c) => p + c);
+      expect(sum, N);
     });
   });
 }
