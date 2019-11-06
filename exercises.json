@@ -24,6 +24,11 @@
       "title": "Hammer biceps curls",
       "image": "assets/hammer_biceps_curls.jpg",
       "work": "1x20 3x15"
+    },
+    {
+      "title": "Crunch",
+      "image": "assets/crunch.jpg",
+      "work": "3x20"
     }
   ]
 }
