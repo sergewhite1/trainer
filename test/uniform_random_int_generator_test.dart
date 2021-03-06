@@ -7,7 +7,7 @@ void main() {
       //  Calc histogram for random distribution in standard dart.
       const int MAX_VALUE = 9;
       const int N = 1000;
-      var hist = List<int>();
+      List<int> hist = [];
       for (int i = 0; i <= MAX_VALUE; ++i) {
         hist.add(0);
       }

@@ -48,8 +48,7 @@ class ExercisePage extends StatelessWidget {
                   ],
                 ),
               ),
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
                 child: Text(
                   'Next',
                 ),

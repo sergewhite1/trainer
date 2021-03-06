@@ -10,7 +10,7 @@ class TrainerApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          builder: (_) => ExerciseViewModel(),
+          create: (_) => ExerciseViewModel(),
         ),
       ],
       child: Consumer<ExerciseViewModel>(

@@ -3,7 +3,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:trainer/model/exercise.dart';
 
 class ExerciseDataProvider {
-  static final _data = List<Exercise>();
+  static final List<Exercise> _data = [];
 
   /* WARNING!
   * This method must be called at app start as await to load data from asset.
